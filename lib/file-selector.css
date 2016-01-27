@@ -1,0 +1,15 @@
+div.file-selector {
+  position: relative;
+}
+
+div.file-selector>.list-group {
+  position: absolute;
+  top: 36px;
+  left: 3px;
+  width: calc(100% - 3px);
+  z-index: 9999;
+}
+
+div.file-selector>.list-group>.list-group-item {
+  padding: 5px 10px;
+}
