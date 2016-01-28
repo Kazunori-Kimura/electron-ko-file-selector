@@ -1,13 +1,10 @@
 <!-- file selector template -->
 <div class="file-selector">
   <input type="text" class="form-control" data-bind="hasfocus: isSelected, value: currentPath, valueUpdate: 'afterkeydown'" />
-  <div class="list-group" data-bind="visible: isSelected()">
-    <!-- ko if: files().length === 0 -->
-    <a href="#" class="list-group-item disabled"><small>該当するファイルがありません。</small></a>
-    <!-- /ko -->
+  <div class="list-group" data-bind="visible: true">
     <!-- ko foreach: files -->
-    <a href="#" class="list-group-item" data-bind="click: $root.select">
-      <small data-bind="path"></small>
+    <a href="#" class="list-group-item" data-bind="visible: isDisplay,click: $parent.select, hasfocus: isSelectedItem">
+      <small data-bind="text: path"></small>
     </a>
     <!-- /ko -->
   </div>

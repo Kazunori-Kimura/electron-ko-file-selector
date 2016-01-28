@@ -10,6 +10,7 @@
   "author": "Kazunori Kimura <kazunori.kimura.js@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "co": "^4.6.0",
     "glob": "^6.0.4",
     "knockout": "^3.4.0",
     "knockout-postbox": "^0.5.2"
