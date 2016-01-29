@@ -1,11 +1,9 @@
 <!-- file selector template -->
 <div class="file-selector">
   <input type="text" class="form-control" data-bind="hasfocus: isSelected, value: currentPath, valueUpdate: 'afterkeydown'" />
-  <div class="list-group" data-bind="visible: true">
-    <!-- ko foreach: files -->
+  <div class="list-group" data-bind="visible: displayList(), foreach: files">
     <a href="#" class="list-group-item" data-bind="visible: isDisplay,click: $parent.select, hasfocus: isSelectedItem">
       <small data-bind="text: path"></small>
     </a>
-    <!-- /ko -->
   </div>
 </div>
