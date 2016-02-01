@@ -5,9 +5,11 @@ div.file-selector {
 div.file-selector>.list-group {
   position: absolute;
   top: 36px;
-  left: 3px;
+  left: 0px;
   width: calc(100% - 3px);
   z-index: 9999;
+  max-height: 200px;
+  overflow-y: scroll;
 }
 
 div.file-selector>.list-group>.list-group-item {
